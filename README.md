@@ -37,12 +37,14 @@ ROOF 项目主页：https://lu-yidan.github.io/ROOF/
 
 学校标识仅用于如实说明教育经历，保留原始配色和比例。香港大学校徽来自 https://www.hku.hk/ 的官方图标；浙江大学校徽来自 https://www.zju.edu.cn/ 的学校标识页面。标识版权归各学校所有。
 
-## 科幻生活版 /orbit/
+## 清新毛玻璃生活版 /orbit/
 
-新版本使用 Three.js（三维轨道）和 Motion（界面过渡），保留简洁版 /。两个页面分别构建和预渲染，共用现有研究资料。可切换研究项目、展开评测、拖动轨道、暂停磁带滚动、选择歌手和 Steam 游戏，以及切换低动态模式。
+新版本使用 Liquid Glass React（弹性与玻璃高光）和 Motion（界面过渡），保留简洁版 /。两个页面分别构建和预渲染，共用现有研究资料。可切换研究项目、展开评测、切换兴趣卡片、暂停磁带滚动、选择歌手和 Steam 游戏，以及切换低动态模式。
 
 音乐磁带为原创 HTML/CSS 视觉设计。代表曲目及官方链接由 Apple Music / Spotify 核对；并非声称某首歌在所有平台均排名第一。尚未收到用户提供的 MP3，因此 audio 字段为空，页面明确显示音源待添加，仅提供官方收听入口，不自动请求不存在的音频。收到可用于公开播放的文件后，将文件放到 public/orbit/music/，并在 orbit/lifestyle.ts 的 audio 填写对应 URL。
 
 游戏与 CS2 2000＋小时由本人提供，其他游戏不填写时长；游戏图片来自各自的 Steam 官方商店页面。Steam 应用 ID：730、105600、289070、413150。
 
-开源来源：https://github.com/mrdoob/three.js ，https://github.com/motiondivision/motion 。许可全文位于 licenses/。游戏、学校和音乐名称及素材权利归各权利人。
+开源来源：https://github.com/rdev/liquid-glass-react ，https://github.com/motiondivision/motion 。许可全文位于 licenses/。游戏、学校和音乐名称及素材权利归各权利人。
+
+视觉参考与组件来源：rdev/liquid-glass-react（MIT）。使用浅色渐层、通透玻璃卡片、柔和阴影与圆角分段控件。保留组件的悬停弹性与高光，以原生 CSS backdrop-filter 实现磨砂效果，避免 SVG 位移滤镜在部分浏览器出现发灰或溢出。玻璃组件仅在客户端挂载，服务器预渲染时使用静态玻璃卡片。
