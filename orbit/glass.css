@@ -1,5 +1,5 @@
-.orbit-body{background:#f5f8fc;color:#263548;color-scheme:light;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
-.orbit-page{--o-ink:#263548;--o-muted:#7a8799;--o-line:#dce4ef;--o-cyan:#527bd0;--o-orange:#d4a16b;--o-mono:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;color:#263548;background:radial-gradient(ellipse at 87% 3%,#e5edfc88,transparent 26%),radial-gradient(ellipse at 8% 25%,#e9f4f3a6,transparent 28%),radial-gradient(ellipse at 85% 55%,#f3e9f777,transparent 27%),#f5f8fc}
+.orbit-body{background:#d7e2e3;color:#253f46;color-scheme:light;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+.orbit-page{--o-ink:#263548;--o-muted:#7a8799;--o-line:#dce4ef;--o-cyan:#527bd0;--o-orange:#d4a16b;--o-mono:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;color:#253f46;background:transparent;isolation:isolate}
 .space-dust{display:none}.orbit-body ::selection{background:#ccddf7;color:#223958}.reading-progress{height:2px;background:linear-gradient(90deg,#78a3e2,#9ccfc6)}.orbit-eyebrow{font-size:10px;font-weight:500;letter-spacing:.11em;color:#8190a4}.orbit-button{clip-path:none;border:0;border-radius:999px;min-height:49px;gap:20px;padding-inline:23px;background:#527fd6;color:#fff!important;box-shadow:0 6px 16px #456ca323;font-size:12px;font-weight:500}.orbit-button:hover{background:#416fc7;box-shadow:0 9px 20px #456ca32c}.orbit-text-link{color:#677f9c}.orbit-text-link:hover{color:#3d71bf}.orbit-icon{color:#768ba5}.orbit-icon:hover{background:#e7eef7;color:#4e76b4}.signal-light{background:#8cbea9;box-shadow:0 0 10px #93beaa2b}.waiting-light{background:#c5ac87}
 .orbit-header{height:76px;width:min(1330px,calc(100% - 36px));margin:16px auto 0;top:16px;padding:0 27px;border:1px solid #ffffffc9;border-radius:24px;background:#ffffff9e;backdrop-filter:blur(24px) saturate(145%);-webkit-backdrop-filter:blur(24px) saturate(145%);box-shadow:0 8px 30px #7890ae0b,0 1px 0 #fff inset}.orbit-brand{gap:0;font-size:17px;font-weight:550;color:#33445c}.orbit-brand small{font-size:8px;letter-spacing:.025em;color:#95a0b1;font-weight:400;margin-top:4px}.orbit-nav{gap:5px;padding:4px;border-radius:999px;background:#e9eff74d}.orbit-nav>a{padding:10px 16px;border-radius:999px;font-size:12px;color:#77879b;transition:color .2s,background .2s,box-shadow .2s}.orbit-nav>a:hover{color:#3d659f;background:#ffffffb8;box-shadow:0 2px 8px #687c9710}.orbit-language{color:#7e8c9f;font-size:10px}.classic-link{color:#8a99ad;font-size:10px;border-color:#dbe4ef;padding-left:21px}.classic-link:hover{color:#587eb8}
 .signal-section{min-height:690px;gap:65px;padding-top:38px;padding-bottom:72px}.signal-section:after{background:linear-gradient(90deg,#dfe7f0,transparent 90%)}.signal-name{font-size:20px;color:#3c506b;margin-top:27px}.signal-name>span{color:#9aa8bb;font-size:10px;letter-spacing:.08em}.signal-copy h1{font-size:clamp(56px,5.2vw,75px);line-height:1.28;font-weight:600;letter-spacing:-.06em;margin-top:17px;color:#27364b}.signal-copy h1>span{color:#7193c6}.signal-description{font-size:14px;color:#8290a3;line-height:2.1!important;margin-top:23px!important;max-width:440px}.signal-actions{gap:26px;margin-top:28px}.signal-actions>.orbit-text-link{font-size:12px;color:#7e94b1}.signal-tags{color:#a2aebd;font-size:8px;letter-spacing:.08em;margin-top:30px}.signal-tags i{border-color:#b6c8d6}.signal-scroll{color:#a0adbe;font-size:8px;letter-spacing:.08em}.signal-scroll>svg{animation:none}.signal-copy>.orbit-eyebrow{font-size:9px;letter-spacing:.1em}:lang(en) .signal-copy h1{font-size:clamp(43px,4.5vw,65px)}
@@ -24,7 +24,7 @@
 .signal-description,.orbit-heading>p,.mixtape-intro>p,.orbit-schools p,
 .research-content>div:first-child>p:last-child,.research-details,.research-details>p,
 .journey-details p,.game-info>div:first-child>p:not(.orbit-eyebrow),
-.orbit-contact>div>p:last-child,.deck-track p,.glass-profile-content p{color:#65768d}
+.orbit-contact>div>p:last-child,.deck-track p,.glass-profile-content p{color:var(--o-copy)}
 .orbit-eyebrow,.orbit-section-label,.orbit-section-label>span:last-child,
 .orbit-brand small,.orbit-language,.classic-link,.signal-name>span,.signal-tags,
 .signal-scroll,.orbit-schools article>div>span,.research-switcher small,
@@ -36,10 +36,122 @@
 .game-tabs small,.game-info .orbit-eyebrow,.game-stat>span,.game-stat>small,
 .orbit-footer,.orbit-footer>span>small,.orbit-footer details,
 .orbit-footer>div>a,.orbit-contact-links>a,.glass-profile-top>span:last-child>small,
-.glass-profile-metric>span,.glass-scene-hint,.game-float small,.music-float small{color:#6c7e96}
-.orbit-nav>a,.research-switcher>button,.game-tabs>button,.glass-segments>button{color:#62758f}
+.glass-profile-metric>span,.glass-scene-hint,.game-float small,.music-float small{color:var(--o-muted)}
+.orbit-nav>a,.research-switcher>button,.game-tabs>button,.glass-segments>button{color:var(--o-copy)}
 .research-switcher>button[aria-selected=true],.game-tabs>button[aria-selected=true],
-.artist-shortcuts>button[aria-pressed=true],.glass-segments>button[aria-pressed=true]{color:#426caa}
-.research-content h3,.deck-track h3,.game-info h3,.orbit-contact h2{color:#3c5472}
+.artist-shortcuts>button[aria-pressed=true],.glass-segments>button[aria-pressed=true]{color:var(--o-accent)}
+.research-content h3,.deck-track h3,.game-info h3,.orbit-contact h2{color:var(--o-ink)}
 .game-info .orbit-text-link,.research-links .orbit-text-link,.glass-profile-link,
-.signal-actions>.orbit-text-link{color:#5279b1}
+.signal-actions>.orbit-text-link{color:var(--o-accent)}
+
+/* A slightly deeper mist palette; all ambient motion stays behind the content. */
+.orbit-page{
+  --o-ink:#253f46;
+  --o-copy:#4b646b;
+  --o-muted:#556d75;
+  --o-accent:#28766b;
+  --o-line:#a5bcb83d;
+  --o-cyan:#398c7d;
+  --o-orange:#a67d56;
+  --o-glass:#f8fbf7a8;
+  --o-glass-border:#fcfffcb8;
+}
+.ambient-background{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:-1;background:linear-gradient(135deg,#d5e0e5,#d1e0dd 54%,#e0e1d9)}
+.ambient-background>span{position:absolute;width:85vmax;height:85vmax;border-radius:50%;filter:blur(48px);will-change:transform}
+.ambient-background>span:nth-child(1){left:-29vmax;top:-34vmax;background:radial-gradient(ellipse,#97b5c7a6,transparent 66%);animation:ambient-tide-blue 28s ease-in-out infinite alternate}
+.ambient-background>span:nth-child(2){right:-30vmax;top:7vh;background:radial-gradient(ellipse,#91bcae8c,transparent 65%);animation:ambient-tide-green 34s ease-in-out infinite alternate}
+.ambient-background>span:nth-child(3){left:12vw;bottom:-55vmax;background:radial-gradient(ellipse,#d7bfa280,transparent 66%);animation:ambient-tide-warm 38s ease-in-out infinite alternate}
+.is-calm .ambient-background>span{animation-play-state:paused}
+@keyframes ambient-tide-blue{from{transform:translate3d(-2%,0,0) scale(1)}to{transform:translate3d(23%,19%,0) scale(1.17)}}
+@keyframes ambient-tide-green{from{transform:translate3d(7%,-6%,0) scale(1.12)}to{transform:translate3d(-23%,13%,0) scale(.94)}}
+@keyframes ambient-tide-warm{from{transform:translate3d(-10%,8%,0) scale(.95)}to{transform:translate3d(13%,-24%,0) scale(1.18)}}
+
+.orbit-body ::selection{background:#9ac9b9;color:#173c35}
+.orbit-body :is(button,a,input,summary):focus-visible{outline-color:#347e70}
+.reading-progress{background:linear-gradient(90deg,#328579,#a79578)}
+.signal-light{background:#3c9380;box-shadow:0 0 10px #428e7333}
+.waiting-light{background:#a98a66}
+.orbit-brand,.signal-name,.signal-copy h1,.orbit-heading h2,.orbit-schools h2,
+.research-content h3,.glass-profile-content,.glass-profile-content h2,
+.deck-track h3,.game-info h3,.orbit-contact h2{color:var(--o-ink)}
+.signal-copy h1>span,.orbit-heading h2>span,.orbit-contact h2>span{color:#3d7b73}
+.signal-tags i{border-color:#88a89e}
+.signal-section:after{background:linear-gradient(90deg,#90aea554,transparent 90%)}
+.signal-name>span,.signal-tags,.signal-scroll{color:var(--o-muted)}
+.orbit-button{background:#2e7a6d;box-shadow:0 7px 18px #245e5b23}
+.orbit-button:hover{background:#236659;box-shadow:0 10px 24px #245e5b2b}
+.orbit-text-link,.orbit-icon,.orbit-language,.classic-link{color:var(--o-copy)}
+.orbit-text-link:hover,.orbit-icon:hover,.classic-link:hover{color:#1e685b}
+.orbit-icon:hover{background:#ffffff5c}
+.classic-link{border-color:#90aaa64a}
+.orbit-header{background:#f5faf4a6;border-color:#fafff6c9;box-shadow:0 10px 35px #4b716211,0 1px 0 #fff9 inset}
+.orbit-nav{background:#a7beb22b}
+.orbit-nav>a:hover{background:#fafff8b8;color:#266e61}
+.glass-orbs i{background:radial-gradient(circle at 30% 20%,#e4f3f5,#9cbed38c 52%,transparent 74%)}
+.glass-orbs i:nth-child(2){background:radial-gradient(circle at 45% 38%,#e6eee1,#b4c9ac91 56%,transparent 75%)}
+.glass-orbs i:nth-child(3){background:radial-gradient(circle at 45% 40%,#e1f3e9,#91bda88c 50%,transparent 74%)}
+.glass-ring{border-color:#f4fff369;box-shadow:0 2px 12px #ffffff96 inset,1px 13px 25px #516f5c17}
+.liquid-profile .glass{background:#f9fff13d;border-color:#fbfff6c9;box-shadow:0 20px 50px #4a716c24,0 2px 2px #ffffffe0 inset!important}
+.liquid-profile .glass__warp{background:#f5fbef57}
+.liquid-profile .glass>div{color:var(--o-ink)!important}
+.glass-profile-fallback{background:#f8fdf1a1;border-color:var(--o-glass-border);box-shadow:0 18px 45px #4b716c24}
+.glass-profile-top,.music-float>div{color:var(--o-copy)}
+.profile-app-icon{background:linear-gradient(145deg,#e8f3ee,#c9e0d4);color:#408371;border-color:#f7fff3;box-shadow:0 4px 12px #4c776c18,0 1px 0 #fff9 inset}
+.theme-pink .profile-app-icon{background:linear-gradient(145deg,#f4eee6,#e8d9c9);color:#9a775b}
+.theme-mint .profile-app-icon{background:linear-gradient(145deg,#eff6e5,#d7e6c5);color:#708659}
+.glass-profile-metric>strong,.game-float strong{color:#34796b}
+.floating-glass{background:#f6fbf3a1;border-color:#fbfff5de;box-shadow:0 12px 35px #4b70631c,0 1px 0 #fff9 inset}
+.music-float{color:#9d7f61}
+.game-float-icon{background:#dcecd7ad;border-color:#eff7e7;color:#688e64}
+.glass-segments{background:#f5faf0b3;border-color:#fbfff6;box-shadow:0 5px 16px #4f75611c}
+.glass-segments>button[aria-pressed=true]{background:#ffffffdc;color:#236d5f;box-shadow:0 2px 7px #517b6429}
+.glass-calm-control{color:#567a6e;background:#f4faf1b8;border-color:#fbfff5}
+.glass-calm-control[aria-pressed=true]{color:#1d6958;background:#d2e8d6}
+.orbit-schools article,.research-console,.game-console{background:var(--o-glass);border-color:var(--o-glass-border);box-shadow:0 14px 38px #3e625a10}
+.orbit-schools article>svg{color:#72938a}
+.research-switcher,.game-tabs{background:#cbdcd12b;border-color:var(--o-line)}
+.research-switcher>button,.game-tabs>button{border-color:var(--o-line)}
+.research-switcher>button>span,.game-tab-number{color:#647f78}
+.research-switcher>button[aria-selected=true],.game-tabs>button[aria-selected=true]{background:linear-gradient(115deg,#d5e7dba8,#fafff680);box-shadow:inset 3px 0 #57917b;color:#286f60}
+.research-result strong,.orbit-paper-metrics strong,.game-stat>strong{color:#3d7a6c}
+.research-details,.orbit-paper-metrics,.journey-details article,.game-stat{border-color:var(--o-line)}
+.research-details summary>span{color:#5f8a7b}
+.journey-details{background:#f4faf075;border-color:var(--o-glass-border);box-shadow:0 7px 22px #4564560e}
+.journey-details h3{color:#395e53}
+.journey-details h3>small{color:#507d61}
+.mixtape-section{background:linear-gradient(115deg,#dce7db38,#efe8dc38);border-color:#88a79629}
+.cassette{background:linear-gradient(145deg,#fcfff7ed,#dde7e0eb);box-shadow:0 12px 27px #45665921,0 1px 0 #fff inset}
+.cassette:hover{box-shadow:0 17px 35px #45665930}
+.cassette.is-selected{box-shadow:0 0 0 2px var(--tape),0 15px 34px #4566592b}
+.tape-genre{color:#546e65}
+.artist-shortcuts>button{background:#f8fcf3a1;border-color:#fafff5cf;box-shadow:0 4px 12px #4f706111}
+.artist-shortcuts>button>span{color:#607f72}
+.artist-shortcuts>button[aria-pressed=true]{background:#fafff5eb;border-color:#a6c6b4;color:#286f60;box-shadow:0 4px 12px #56765c24}
+.tape-deck{background:linear-gradient(120deg,#fafff4b8,#edf5e9b3);border-color:#fbfff5e6;box-shadow:0 16px 45px #3d615324,0 1px 0 #fff9 inset}
+.deck-symbol{background:linear-gradient(145deg,#fafff5,#dfeadb);border-color:#fafff5;color:#578b73}
+.deck-meter i{background:#649a80}
+.deck-controls{background:#eff6e92b;border-color:var(--o-line)}
+.deck-play{background:#3f8875;color:#fff;box-shadow:0 5px 14px #456f5b24}
+.deck-play:disabled{background:#d1dfd2;color:#66826c}
+.deck-controls input{accent-color:#397e68}
+.deck-volume,.tape-deck .orbit-icon{color:#5a7a6c}
+.tape-deck .orbit-icon:hover{background:#dcebd6;color:#2d6c55}
+.deck-bottom>a:hover{color:#276a56}
+.game-art{background:#eef4e9}
+.game-art:after{background:linear-gradient(transparent,#f3f8ef)}
+.game-art>span{background:#f9fff1a6;color:#3f6253;border-color:#fcfff5a6}
+.orbit-contact,.orbit-contact-links>a,.orbit-footer{border-color:var(--o-line)}
+.orbit-contact-links>a>svg:last-child{color:#66877b}
+.orbit-contact-links>a:hover{color:#266e59}
+.orbit-contact-links>button{color:#58776a}
+.orbit-footer details a:hover{color:#2e735d}
+@media(max-width:850px){
+  .orbit-nav{background:#f0f7eceb;border-color:#fafff6;box-shadow:0 12px 30px #44684e1c}
+  .research-switcher>button[aria-selected=true],.game-tabs>button[aria-selected=true]{box-shadow:inset 0 -2px #57917b}
+}
+@media(max-width:650px){.ambient-background>span{filter:blur(32px)}}
+@supports not (backdrop-filter:blur(12px)){
+  .orbit-header,.floating-glass,.glass-segments,.tape-deck,.research-console,.game-console{background:#eff6ebf2}
+  .glass-profile-fallback,.liquid-profile .glass{background:#f8fff0ed}
+}
+@media(prefers-reduced-motion:reduce){.ambient-background>span{animation:none;will-change:auto}}

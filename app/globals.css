@@ -83,3 +83,54 @@
 @media(max-width:1100px){.school-emblem.zju-emblem img{width:112px}}
 @media(max-width:780px){.school-emblem.zju-emblem img{width:99px}}
 @media(max-width:520px){.school-emblem.zju-emblem img{width:110px}}
+
+/* Subtle feedback and a browsable project viewer for the classic portfolio. */
+.main-nav a[aria-current=location]{color:var(--forest)}
+.main-nav a[aria-current=location]:after{transform:scaleX(1)}
+.education-grid>article{transition:transform .25s,box-shadow .25s,border-color .25s}
+.education-grid>article:hover{transform:translateY(-3px);border-color:#c4d5b6;box-shadow:0 12px 26px #27442b0c}
+.project-card:focus-within .project-media{box-shadow:0 0 0 3px #c8d9b9,0 15px 30px #213a2214}
+.filters button,.icon-button{transition:background .2s,color .2s,transform .2s}
+.filters button:hover{background:#e6ecde;color:#496e3c}
+.site-reading-progress{display:none}
+@supports (animation-timeline:scroll()){
+  .site-reading-progress{display:block;position:fixed;top:0;left:0;right:0;height:3px;z-index:60;background:linear-gradient(90deg,#426d50,#b1c780);transform-origin:left;animation:reading-fill linear both;animation-timeline:scroll(root)}
+  @keyframes reading-fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+}
+.project-explorer-toolbar{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px;background:#fafbf6eb;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.project-pagination{display:flex;align-items:center;gap:5px}
+.project-pagination>span{display:flex;align-items:center;gap:10px;font:11px/1.5 monospace;color:#385c3c}
+.project-pagination i{color:#adbba1;font-style:normal}
+.project-pagination .icon-button{width:33px;height:33px;color:#466d43}
+.project-pagination .icon-button:hover{background:#e3ecd9}
+.explorer-caption{font-size:10px;letter-spacing:.08em;color:#819174;margin-left:auto;margin-right:8px}
+.explorer-close{color:#4e6645;background:#edf2e5;width:33px;height:33px}
+.detail-tabs{display:flex;gap:5px;padding:5px;margin-top:26px;border:1px solid #e0e7d7;background:#edf2e7;border-radius:10px}
+.detail-tabs>button{flex:1;padding:12px 15px;border-radius:7px;font-size:12px;color:#748667;background:transparent;transition:background .2s,color .2s,box-shadow .2s}
+.detail-tabs>button[aria-selected=true]{color:#335d3b;background:#fcfdf8;box-shadow:0 3px 10px #3a583511}
+.detail-tabs>button:hover{color:#284f2f}
+.project-detail-panel{min-height:215px;padding-top:26px;outline-offset:5px;animation:explorer-panel-in .22s both}
+.project-detail-panel h3{font-size:18px;line-height:1.7;letter-spacing:-.025em;color:#385a3b}
+.detail-overview>p{font-size:13px;line-height:2;color:#73826a;margin-top:14px;max-width:660px}
+.detail-overview>.tag-row{margin-top:20px}
+.detail-inline-action{display:flex;align-items:center;gap:9px;padding:0;background:none;color:#527844;font-size:12px;margin-top:23px}
+.detail-inline-action:hover{color:#244b2e}
+.detail-evaluation>.detail-result{margin-top:0}
+.detail-copy>.detail-actions:empty{display:none}
+.detail-copy>.detail-actions{padding-top:24px;margin-top:26px;border-top:1px solid var(--line)}
+@keyframes explorer-panel-in{from{opacity:.5;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:780px){
+  .main-nav a[aria-current=location]{background:#e9f0df;border-radius:6px}
+  .project-explorer-toolbar{padding:9px 12px}
+  .explorer-caption{font-size:9px;letter-spacing:.02em;margin-right:2px}
+  .detail-tabs{margin-top:22px;gap:3px;padding:4px}
+  .detail-tabs>button{padding:11px 8px;font-size:11px}
+  .project-detail-panel{padding-top:22px;min-height:230px}
+  .project-detail-panel h3{font-size:16px}
+  .detail-overview>p{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  .site-reading-progress{display:none}
+  .project-detail-panel{animation:none}
+  .education-grid>article:hover{transform:none}
+}

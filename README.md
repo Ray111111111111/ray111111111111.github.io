@@ -48,3 +48,11 @@ ROOF 项目主页：https://lu-yidan.github.io/ROOF/
 开源来源：https://github.com/rdev/liquid-glass-react ，https://github.com/motiondivision/motion 。许可全文位于 licenses/。游戏、学校和音乐名称及素材权利归各权利人。
 
 视觉参考与组件来源：rdev/liquid-glass-react（MIT）。使用浅色渐层、通透玻璃卡片、柔和阴影与圆角分段控件。保留组件的悬停弹性与高光，以原生 CSS backdrop-filter 实现磨砂效果，避免 SVG 位移滤镜在部分浏览器出现发灰或溢出。玻璃组件仅在客户端挂载，服务器预渲染时使用静态玻璃卡片。
+
+## 交互与演示维护
+
+简洁版项目弹窗由 components/project-explorer.tsx 管理，支持前后项目切换，以及概览、方法、评测三个页签；页签支持方向键、Home / End 导航。首页导航随滚动更新当前章节，支持的浏览器还显示阅读进度。
+
+生活版的全屏雾色背景使用 CSS 渐层与缓慢位移动画，配色与玻璃卡片、字体、按钮共用青绿主题变量。低动态开关和系统减少动态效果偏好都能暂停背景；不加载额外的背景视频或外部素材。
+
+两个版本共享 public/media/amp-guided-four-windows.mp4（用户提供的 model_22899 guided 四窗口回放，10 秒、2560 × 1440、H.264）。视频只调整了网页渐进加载所需的封装顺序，没有重新压缩画质；封面取自该视频第 2 秒。

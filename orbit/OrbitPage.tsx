@@ -64,7 +64,7 @@ export default function OrbitPage() {
 
   return <div className={`orbit-page ${calm ? "is-calm" : ""}`}>
     <a className="orbit-skip" href="#orbit-main">{t("跳转到正文","Skip to content")}</a><motion.div className="reading-progress" style={{scaleX:scrollProgress}} aria-hidden="true"/>
-    <div className="space-dust" aria-hidden="true"/>
+    <div className="ambient-background" aria-hidden="true"><span/><span/><span/></div>
     <header className="orbit-header"><a className="orbit-brand" href="#signal"><span>{t("蔡宗睿","Zongrui Cai")}<small>{t("个人网站 · 研究与生活","PERSONAL WEBSITE · WORK & LIFE")}</small></span></a><nav className={menuOpen ? "orbit-nav is-open":"orbit-nav"} aria-label={t("主导航","Main navigation")}>{[["research",t("研究","Research")],["mixtape",t("磁带","Mixtape")],["games",t("游戏","Games")],["contact",t("联系","Contact")]].map(([id,label],i)=><a href={`#${id}`} key={id} onClick={()=>setMenuOpen(false)}>{label}</a>)}</nav><div className="orbit-header-actions"><button className="orbit-language" onClick={()=>setEnglish(v=>!v)} aria-label={t("Switch to English","切换为中文")}>{english ? "中文":"EN"}</button><a className="classic-link" href="../">{t("简洁版","Classic")}<ArrowUpRight size={13}/></a><button className="orbit-icon orbit-menu" onClick={()=>setMenuOpen(v=>!v)} aria-label={t("展开导航","Toggle navigation")} aria-expanded={menuOpen}>{menuOpen?<X size={20}/>:<Menu size={20}/>}</button></div></header>
 
     <main id="orbit-main">

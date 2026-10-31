@@ -165,8 +165,8 @@ export const projects = [
       "AMP",
       "MuJoCo / MJLab"
     ],
-    "video": "./media/amp-recovery.mp4",
-    "poster": "./media/amp-cover.jpg",
+    "video": "./media/amp-guided-four-windows.mp4",
+    "poster": "./media/amp-guided-four-windows.jpg",
     "goal": "直接追求身体高度容易导致顶板与卡滞。目标是在保留运动先验的同时，让策略探索低位调整与有效脱困。",
     "goalEn": "A pure height objective can produce pushing and jamming. The goal is to retain a motion prior while enabling low-posture adjustments and escape.",
     "work": [
