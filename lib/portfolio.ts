@@ -5,6 +5,7 @@ export const CONTACT = {
   "repository": "https://github.com/Ray111111111111/G1Recovery_AMP"
 };
 export const ROOF_DEMO = {
+  "projectUrl": "https://lu-yidan.github.io/ROOF/",
   "video": "./media/roof-public-demo.mp4",
   "poster": "./media/roof-public-demo.jpg",
   "title": "ROOF · 项目万圣节 Demo",
