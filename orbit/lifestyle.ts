@@ -1,0 +1,14 @@
+export const mixtape = [
+  { id: "trent", artist: "Trent Dabbs", song: "Inside These Lines", genre: "INDIE / FOLK", color: "#efa772", ink: "#33201a", artwork: "lines", audio: "", listen: "https://music.apple.com/us/album/inside-these-lines/336664433?i=336664576", note: "独立民谣，留一些安静的空间。", noteEn: "Indie folk, with a little room for quiet." },
+  { id: "coldplay", artist: "Coldplay", song: "Yellow", genre: "ALTERNATIVE ROCK", color: "#f1da76", ink: "#272921", artwork: "stars", audio: "", listen: "https://open.spotify.com/track/3AJwUDP919kvQ9QcozQPxg", note: "英式摇滚，把旋律交给星空。", noteEn: "Alternative rock, with melodies that open into the sky." },
+  { id: "sun", artist: "孙燕姿", song: "遇见", genre: "MANDARIN POP", color: "#c9b8eb", ink: "#302b43", artwork: "meet", audio: "", listen: "https://music.apple.com/tw/album/遇見/578524971?i=578524975", note: "清澈的声线，熟悉的华语旋律。", noteEn: "A clear voice, and familiar Mandarin melodies." },
+  { id: "jay", artist: "周杰伦", song: "晴天", genre: "MANDARIN / R&B", color: "#8bc7bc", ink: "#183e38", artwork: "sun", audio: "", listen: "https://music.apple.com/tw/album/晴天/535824731?i=535824738", note: "流行与 R&B，带着一点青春的回声。", noteEn: "Pop and R&B, with echoes of growing up." },
+  { id: "landy", artist: "温岚", song: "夏天的风", genre: "MANDARIN POP", color: "#b9dbef", ink: "#254253", artwork: "wind", audio: "", listen: "https://music.apple.com/tw/album/夏日の風/1441628367?i=1441628383", note: "轻盈的华语流行，像夏日的风。", noteEn: "Light Mandarin pop, like a summer breeze." },
+];
+
+export const games = [
+  { id: 730, name: "Counter-Strike 2", zh: "反恐精英 2", short: "CS2", genre: "FPS / TEAMPLAY", number: "2000+", unit: "小时", unitEn: "hours", image: "../orbit/games/730.jpg", color: "#ecad65", description: "竞技、配合与每一回合的判断。CS2 的累计游玩时间已超过 2000 小时。", descriptionEn: "Competition, teamwork, and round-by-round decisions. Over 2,000 hours of personal playtime in CS2." },
+  { id: 105600, name: "Terraria", zh: "泰拉瑞亚", short: "TERRARIA", genre: "SANDBOX / ADVENTURE", number: "EXPLORE", unit: "探索与建造", unitEn: "Explore & build", image: "../orbit/games/105600.jpg", color: "#8fca9a", description: "挖掘、探索、建造，也迎接地下与远方的冒险。", descriptionEn: "Digging, exploring, building, and venturing into the unknown." },
+  { id: 289070, name: "Civilization VI", zh: "文明 VI", short: "CIV VI", genre: "4X / STRATEGY", number: "ONE MORE", unit: "再来一回合", unitEn: "One more turn", image: "../orbit/games/289070.jpg", color: "#b9a2df", description: "在回合之间做选择，让一个文明慢慢生长。", descriptionEn: "Turn-by-turn decisions, watching a civilization take shape." },
+  { id: 413150, name: "Stardew Valley", zh: "星露谷物语", short: "STARDEW", genre: "FARMING / LIFE SIM", number: "SLOW DOWN", unit: "切换生活节奏", unitEn: "A slower rhythm", image: "../orbit/games/413150.jpg", color: "#82c5df", description: "种田、四季与小镇生活，换一种节奏度过游戏时光。", descriptionEn: "Farming, seasons, and small-town life — a different pace of play." },
+];

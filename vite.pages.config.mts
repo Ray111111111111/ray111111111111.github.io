@@ -9,5 +9,8 @@ export default defineConfig({
   publicDir: root + "public",
   plugins: [react()],
   resolve: { alias: { "@": root } },
-  build: { outDir: root + "dist-pages", emptyOutDir: true },
+  build: {
+    outDir: root + "dist-pages", emptyOutDir: true,
+    rolldownOptions: { input: { main: root + "pages/index.html", orbit: root + "pages/orbit/index.html" } },
+  },
 });
